@@ -34,7 +34,7 @@ def brush_mysql():
                 execute = cursor.execute(sql_update)
                 # 提交事务
                 conn.commit()
-                print('{}-{}表更新条数据，id为：{}，阅读量加：{}！'.format(
+                print('{}-{}表更新数据，id为：{}，阅读量加：{}！'.format(
                     datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S'), item, results_item['id'], count))
             print('{}-{}表更新数据条数：{}！'.format(
                 datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S'), item, len(results)))
